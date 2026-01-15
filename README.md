@@ -4,6 +4,8 @@ This repository contains a reproducible computational framework to study mechani
 
 The project focuses on identifying interpretable molecular signatures associated with resistance phenotypes and leveraging these signatures for *in silico* drug repurposing. Publicly available datasets are used throughout the pipeline to ensure transparency and reproducibility.
 
+![project_pipeline](./docs/images/project_pipeline.png)
+
 ## Project Goals
 
 The main goal of this project is to develop an interpretable and reproducible pipeline to investigate molecular mechanisms underlying drug resistance in cancer.
