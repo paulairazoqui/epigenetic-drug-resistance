@@ -35,6 +35,22 @@ DepMap gene expression data will be used as the primary feature space for modeli
 **Scope**
 DepMap constitutes the primary data source for the MVP implementation.
 
+#### 2.1.1 Files Used in This Project
+
+**Dataset:** DepMap Public 25Q3 — RNA-seq Expression  
+**File:** `OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv`  
+**Release:** DepMap Public 25Q3  
+**Source:** https://depmap.org/portal/download/
+
+**Description:**  
+Log-transformed gene-level RNA-seq expression values (log2(TPM + 1)) for human protein-coding genes. Expression data were quantified using Salmon and aligned to Gencode v38 as part of the DepMap RNA-seq processing pipeline.
+
+**Role in This Project:**  
+Primary feature matrix used to model drug sensitivity and resistance across cancer cell lines.
+
+**Notes:**  
+Only protein-coding genes are included to reduce dimensionality and improve biological interpretability. Raw expression data are used without additional normalization beyond the provided log2(TPM + 1) transformation.
+
 ---
 
 ### 2.2 PRISM Repurposing Dataset
@@ -55,6 +71,22 @@ PRISM drug response data will be used to define sensitive and resistant phenotyp
 
 **Scope**
 Included as part of the MVP through its integration with DepMap.
+
+#### 2.2.1 Files Used in This Project
+
+**Dataset:** PRISM Repurposing Secondary Screen  
+**File:** `secondary_dose_response_curve_parameters.csv`  
+**Release:** PRISM Repurposing 20Q2 (Secondary Screen)  
+**Source:** https://depmap.org/portal/download/
+
+**Description:**  
+Dose–response curve parameters derived from pooled cell line chemical perturbation screens. The dataset includes drug response metrics such as AUC, IC50, and EC50, computed from fitted dose–response models across multiple compounds and cancer cell lines.
+
+**Role in This Project:**  
+Used as the primary source of drug response measurements. AUC values are employed as continuous outcomes to model drug sensitivity and resistance, with optional binarization for classification tasks.
+
+**Notes:**  
+This dataset is preprocessed and replicate-collapsed, enabling direct integration with DepMap gene expression data without additional curve fitting.
 
 ---
 
