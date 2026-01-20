@@ -8,5 +8,10 @@
   "min_cell_lines_per_drug": 224,
   "max_cell_lines_per_drug": 719,
   "target_column": "auc",
-  "min_threshold_per_drug": 200
+  "min_threshold_per_drug": 200,
+  "n_expression_rows_original": 1754,
+  "n_expression_rows_matched": 751,
+  "n_unique_cell_lines_expression": 727,
+  "n_genes": 19220,
+  "final_gate": "GO"
 }
