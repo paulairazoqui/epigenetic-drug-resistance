@@ -1,0 +1,14 @@
+{
+  "target_column": "auc",
+  "min_cell_lines_per_drug": 200,
+  "selection_filters": {
+    "MIN_STD": 0.15,
+    "MIN_MEAN": 0.6,
+    "MAX_MEAN": 1.3
+  },
+  "top_n": 100,
+  "n_candidates": 811,
+  "n_selected": 100,
+  "selected_min_std": 0.1514038934886878,
+  "selected_mean_std": 0.1942798012688355
+}

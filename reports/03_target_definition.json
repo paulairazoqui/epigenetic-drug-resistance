@@ -1,0 +1,11 @@
+{
+  "primary_task": "regression",
+  "target_column": "auc",
+  "rationale": [
+    "AUC is continuous and non-degenerate",
+    "Drug-level response shows substantial heterogeneity",
+    "Regression preserves maximal response information",
+    "Avoids arbitrary binarization thresholds"
+  ],
+  "secondary_task_future": "binary_classification"
+}
