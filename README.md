@@ -93,3 +93,30 @@ Planned next steps:
 - In silico drug repurposing analyses based on transcriptomic signature reversal.
 
 This roadmap may evolve as new insights emerge during data exploration and modeling.
+
+---
+
+## Environment setup
+
+This project was developed using **Python 3.11**.
+
+To reproduce the environment:
+
+```bash
+git clone <https://github.com/paulairazoqui/epigenetic-drug-resistance>
+cd epigenetic-drug-resistance
+
+python -m venv .venv
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Linux / macOS
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+**Python 3.11 is recommended.**
+
+The virtual environment (.venv/) is not versioned and must be created locally.
