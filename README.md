@@ -120,3 +120,8 @@ pip install -r requirements.txt
 **Python 3.11 is recommended.**
 
 The virtual environment (.venv/) is not versioned and must be created locally.
+
+> On Windows systems with multiple Python versions installed, you can explicitly select Python 3.11 using:
+> ```powershell
+> py -3.11 -m venv .venv
+> ```
